@@ -36,6 +36,10 @@ const initGame = () => {
     let htmlMarkup = `<div class="food" style="grid-area: ${foodY} / ${foodX}"></div>`;
     // grid-area is a shorthand property that sets values for grid item's start and end lines for both the row and column
     
+    if (snakeX === foodX && snakeY === foodY) {
+        changeFoodPosition();
+    }
+
     // Updating The Snake's Head Position based on The Current velocity
     snakeX += velocityX ;
     snakeY += velocityY ;
