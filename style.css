@@ -52,7 +52,7 @@ body {
 }
 
 .controls {
-    display: flex;
+    display: none;
     justify-content: space-between;
 }
 
@@ -65,3 +65,4 @@ body {
     width: calc(100% / 4);
     border-right: 1px solid #171b26;
 }
+
